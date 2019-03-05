@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BasicHomeController">
+   <children>
+      <ImageView fitHeight="725.0" fitWidth="1000.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/background.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="phone" layoutX="25.0" layoutY="213.0" mnemonicParsing="false" onAction="#DisplayContacts" prefHeight="170.0" prefWidth="170.0" style="-fx-background-radius: 100;" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="213.0">
+         <graphic>
+            <ImageView fitHeight="124.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/BasicPhone.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="map" layoutX="195.0" layoutY="213.0" mnemonicParsing="false" prefHeight="170.0" prefWidth="170.0" style="-fx-background-radius: 100;" AnchorPane.leftAnchor="220.0">
+         <graphic>
+            <ImageView fitHeight="124.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/BasicMaps.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="settings" layoutX="390.0" layoutY="213.0" mnemonicParsing="false" onAction="#SettingsMenu" prefHeight="170.0" prefWidth="170.0" style="-fx-background-radius: 100;" AnchorPane.leftAnchor="415.0">
+         <graphic>
+            <ImageView fitHeight="124.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/BasicSettings.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="music" layoutX="585.0" layoutY="213.0" mnemonicParsing="false" onAction="#DisplayEntertainment" prefHeight="170.0" prefWidth="170.0" style="-fx-background-radius: 100;" AnchorPane.leftAnchor="610.0">
+         <graphic>
+            <ImageView fitHeight="116.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/BasicEntertainment.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="messages" layoutX="780.0" layoutY="213.0" mnemonicParsing="false" onAction="#RecieveText" prefHeight="170.0" prefWidth="170.0" style="-fx-background-radius: 100;" AnchorPane.leftAnchor="810.0" AnchorPane.rightAnchor="25.0">
+         <graphic>
+            <ImageView fitHeight="116.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/BasicMessages.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
